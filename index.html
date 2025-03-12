@@ -4,72 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông Tin Liên Hệ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
+            background-color: #f0f4f8;
             color: #333;
         }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
         .contact-info {
             margin-top: 20px;
         }
+
         .contact-info h2 {
-            color: #444;
+            font-size: 1.6em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
+
         .contact-item {
-            margin: 10px 0;
+            margin: 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
         }
+
         .contact-item label {
             font-weight: bold;
+            color: #2980b9;
+            margin-right: 10px;
+            flex-shrink: 0;
         }
+
         .contact-item a {
-            color: #007BFF;
+            color: #2980b9;
             text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1.1em;
         }
+
         .contact-item a:hover {
+            color: #1abc9c;
             text-decoration: underline;
         }
+
+        .contact-item i {
+            margin-right: 10px;
+            font-size: 1.5em;
+            color: #2980b9;
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
-            color: #777;
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        .footer p {
+            margin-top: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            font-size: 1.5em;
+            color: #2980b9;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #1abc9c;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Thông Tin Liên Hệ</h1>
+        <h1>Đỗ Đông Đức</h1>
+        <div class="intro">
+            <p>Lập trình viên Java với hơn 10 năm kinh nghiệm trong mảng Tài chính, Chứng khoán và Thanh toán điện tử.</p>
+        </div>
+
         <div class="contact-info">
             <h2>Thông tin cá nhân</h2>
             <div class="contact-item">
-                <label>Tên:</label> <span>Đỗ Đông Đức</span>
+                <label><i class="fas fa-user"></i>Tên:</label> <span>Đỗ Đông Đức</span>
             </div>
             <div class="contact-item">
-                <label>Email:</label> <a href="mailto:duc3d.hus@gmail.com">duc3d.hus@gmail.com</a>
+                <label><i class="fas fa-envelope"></i>Email:</label> <a href="mailto:duc3d.hus@gmail.com">duc3d.hus@gmail.com</a>
             </div>
             <div class="contact-item">
-                <label>Số điện thoại:</label> <a href="tel:+1234567890">+123 456 7890</a>
+                <label><i class="fas fa-phone-alt"></i>Số điện thoại:</label> <a href="tel:+1234567890">+123 456 7890</a>
             </div>
             <div class="contact-item">
-                <label>Địa chỉ:</label> <span>Tây Mỗ, Nam Từ Liêm, Hà Nội</span>
+                <label><i class="fas fa-map-marker-alt"></i>Địa chỉ:</label> <span>Tây Mỗ, Nam Từ Liêm, Hà Nội</span>
             </div>
             <div class="contact-item">
-                <label>LinkedIn:</label> <a href="https://www.linkedin.com/in/duc3dhus" target="_blank">linkedin.com/in/duc3dhus</a>
+                <label><i class="fab fa-linkedin"></i>LinkedIn:</label> <a href="https://www.linkedin.com/in/duc3dhus" target="_blank">linkedin.com/in/duc3dhus</a>
+            </div>
+            <div class="contact-item">
+                <label><i class="fab fa-github"></i>GitHub:</label> <a href="https://github.com/duc3d-hus" target="_blank">github.com/duc3d-hus</a>
             </div>
         </div>
 
